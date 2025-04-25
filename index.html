@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ian Gonsalves - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div>
+        <h1>Ian Gonsalves</h1>
+        <p>Backend Developer | Full Stack Engineer</p>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+        <ul>
+            <li>Backend Developer with two years of experience at Belsimpel, Netherlands' largest telecom company.</li>
+            <li>Proficient in PHP, Python, JavaScript, and SQL, with expertise in Laravel, Django, and React frameworks.</li>
+            <li>Experienced in database management and optimization using SQL, MariaDB, and MongoDB for large-scale applications.</li>
+            <li>Strong background in DevOps practices using Docker, GitLab CI/CD, and modern monitoring tools.</li>
+        </ul>
+    </section>
+    <section id="projects">
+      <h2 data-aos="fade-up">Projects</h2>
+      <div id="filter" data-aos="fade-up">
+        <button data-filter="all">All</button>
+        <button data-filter="python">Python</button>
+        <button data-filter="javascript">JavaScript</button>
+        <button data-filter="html">HTML/CSS</button>
+      </div>
+      <div class="project" data-category="python" data-aos="fade-up">
+        <div class="project-content">
+          <img src="images/restaurant.png" alt="Restaurant Booking System" class="project-image">
+          <div class="project-description">
+            <h3>Restaurant Booking System</h3>
+            <p>Description: The Little Lemon Restaurant Booking System is a Django-based web application that serves as a comprehensive restaurant management platform.
+               It allows customers to make online reservations, view the restaurant's menu, and manage their bookings through a user-friendly interface. 
+               The system includes features for viewing restaurant information, placing bookings for specific dates, and managing existing reservations, 
+               all while maintaining a clean and professional user experience.</p>
+            <p><strong>Technologies:</strong> Python, Django, MYSQL, HTML, CSS</p>
+            <a href="https://github.com/iangonsalves/RestaurantBookingService" target="_blank">GitHub Repo</a> |
+            <a href="https://restaurantbookingservice.onrender.com" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="project" data-category="html" data-aos="fade-up">
+        <div class="project-content">
+          <img src="images/calculator_example.png" alt="Calculator Website Screenshot" class="project-image">
+          <div class="project-description">
+            <h3>Calculator</h3>
+            <p>Description: A modern, user-friendly calculator web application featuring a sleek interface with a retro-inspired LED display. Built with vanilla JavaScript, it supports all basic arithmetic operations (addition, subtraction, multiplication, division), includes decimal point functionality, and offers convenient Clear (CLR) and Delete (DEL) operations. The calculator features real-time calculation display, responsive design with satisfying button feedback, and implements error handling for invalid operations. The interface is styled with CSS Grid for perfect button alignment and uses the Orbitron font family for that classic calculator display look.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/iangonsalves/calculator" target="_blank">GitHub Repo</a>
+            <a href="https://iangonsalves.github.io/calculator/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="project" data-category="html" data-aos="fade-up">
+        <div class="project-content">
+          <img src="images/etch-a-sketch.png" alt="Etch a Sketch" class="project-image">
+          <div class="project-description">
+            <h3>Etch-a-Sketch</h3>
+            <p>Description: A digital drawing board inspired by the classic Etch-a-Sketch toy. Features include a customizable grid size for different drawing resolutions, multiple drawing modes including classic black and a dynamic rainbow color option, and a clear grid function for starting fresh. The interface allows users to create pixel art by hovering over the grid, making it intuitive and fun to use. Perfect for creating digital sketches or pixel-based artwork.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/iangonsalves/etch-a-sketch" target="_blank">GitHub Repo</a> |
+            <a href="https://iangonsalves.github.io/etch-a-sketch/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="project" data-category="javascript" data-aos="fade-up">
+        <div class="project-content">
+          <img src="images/rpg.png" alt="Rock Paper Scissors" class="project-image">
+          <div class="project-description">
+            <h3>Rock Paper Scissors</h3>
+            <p>Description: An interactive implementation of the classic Rock Paper Scissors game where players compete against the computer. The game features a first-to-5 scoring system, real-time display of player and computer choices, and a dynamic scoreboard tracking progress. Players can choose between Rock, Paper, or Scissors with clear visual feedback, and the game includes a reset function to start fresh. The interface provides immediate feedback on game outcomes and maintains a running score until victory.</p>
+            <p><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
+            <a href="https://github.com/iangonsalves/rock-paper-scissors" target="_blank">GitHub Repo</a> |
+            <a href="https://iangonsalves.github.io/rock-paper-scissors/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:iangonsalves29@gmail.com">iangonsalves29@gmail.com</a></p>
+      <p>LinkedIn: <a href="www.linkedin.com/in/iangonsalves" target="_blank">Ian Gonsalves</a></p>
+      <p>GitHub: <a href="https://github.com/iangonsalves" target="_blank">iangonsalves</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Ian Gonsalves. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

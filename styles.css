@@ -1,0 +1,459 @@
+/* Global styles and resets - NO TRANSITIONS */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: none !important;
+}
+
+/* Base styles */
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    transition: none !important;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #111827, #1e40af);
+    color: #ffffff;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: none !important;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    background: rgba(17, 24, 39, 0.95);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+nav a.active {
+    color: #60a5fa;
+}
+
+nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #60a5fa;
+    border-radius: 2px;
+}
+
+/* Project cards */
+.project {
+    margin-bottom: 2.5rem;
+    background: #2d2d2d;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    border-color: #3498db;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    background-color: #242424;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+}
+
+/* Project content */
+.project-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-description {
+    flex: 1;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+.project-description h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0 0 1rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.project-description p {
+    color: #e0e0e0;
+    margin: 0.8rem 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.project-description a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    color: #60a5fa;
+    text-decoration: none;
+    border: 2px solid #60a5fa;
+    border-radius: 5px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.project-description a:hover {
+    background: #60a5fa;
+    color: #ffffff;
+}
+
+/* Section headings */
+h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Filter buttons */
+#filter {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#filter button {
+    padding: 0.7rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+    background: #2d2d2d;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#filter button:hover {
+    background: #3498db;
+    transform: translateY(-2px);
+}
+
+#filter button.active {
+    background: #3498db;
+}
+
+/* Contact section */
+#contact {
+    background: #2d2d2d;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+    border-radius: 15px 15px 0 0;
+}
+
+#contact a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    color: #3498db;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #111827;
+    color: #ffffff;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+
+/* Remove theme toggle button */
+.theme-toggle {
+    display: none;
+}
+
+/* Keep animation only for cursor blink */
+@keyframes cursor-blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #ffffff; }
+}
+
+/* General Reset */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 0% 0%, rgba(41, 128, 185, 0.03) 20%, transparent 70%),
+        radial-gradient(circle at 100% 100%, rgba(26, 37, 51, 0.03) 20%, transparent 70%);
+    z-index: -1;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.header-content div h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content div p {
+    font-size: 1.4rem;
+    opacity: 0.95;
+    margin: 0;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+  
+/* Header pattern overlay */
+.dark-theme header::before {
+    opacity: 0.15;
+}
+
+/* Image modal */
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.image-modal.show {
+    opacity: 1;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 5px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.image-modal.show img {
+    transform: scale(1);
+}
+
+/* Remove ALL transitions first */
+*, *::before, *::after {
+    transition: none !important;
+}
+  
+/* Dark theme header and nav */
+.dark-theme header {
+    background: linear-gradient(135deg, #111827, #1e40af);
+    color: #ffffff;
+}
+
+.dark-theme nav {
+    background: rgba(17, 24, 39, 0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Footer styles to match */
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+
+.dark-theme footer {
+    background: #111827;
+}
+  
+/* Only keep transitions for interactive hover effects */
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+}
+
+/* Keep transitions ONLY for these specific interactive properties */
+.project {
+    transition: transform 0.2s ease !important;
+}
+
+.project-image {
+    transition: transform 0.2s ease !important;
+}
+
+.theme-toggle {
+    transition: transform 0.2s ease !important;
+}
+
+.image-modal {
+    transition: opacity 0.2s ease !important;
+}
+
+.image-modal img {
+    transition: transform 0.2s ease !important;
+}
+
+/* Remove specific transition properties that might be causing delays */
+.dark-theme {
+    transition: none !important;
+}
+
+body, 
+header, 
+nav, 
+.header-content,
+#contact,
+#contact::before,
+footer,
+.project-description a,
+.project-description a::before,
+nav a.active::after,
+.dark-theme nav a.active::after {
+    transition: none !important;
+}
+
+/* Override any existing transition properties */
+[class*="dark-theme"] * {
+    transition: none !important;
+}
+
+/* Keep only transform transitions for interactive elements */
+.project:hover,
+.project-image:hover,
+.theme-toggle:hover {
+    transition: transform 0.2s ease !important;
+}
+
+/* Dark theme project card overrides */
+body.dark-theme .project {
+    background: #2d2d2d !important;
+    border-color: rgba(255,255,255,0.1) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+}
+
+body.dark-theme .project-image {
+    background-color: #242424 !important;
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+body.dark-theme .project:hover {
+    border-color: #3498db !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+    .project-image {
+        max-width: 100%;
+    }
+    
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-description {
+        width: 100%;
+    }
+}
+  
