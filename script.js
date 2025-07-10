@@ -67,7 +67,9 @@ function setupProjectFilters() {
 
             // Animate projects
             projects.forEach(project => {
-                if (filter === 'all' || project.dataset.category === filter) {
+                const categories = project.dataset.category || '';
+                
+                if (filter === 'all' || categories.includes(filter)) {
                     project.style.display = 'block';
                     project.style.opacity = '0';
                     project.style.transform = 'translateY(20px)';
@@ -125,7 +127,7 @@ function setupSmoothScroll() {
 }
 
 function setupTypingEffect() {
-    const text = document.querySelector('.header-content p');
+    const text = document.querySelector('.header-content div p'); // More specific selector
     if (!text) return;
 
     const originalText = text.textContent;
@@ -180,4 +182,3 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
-  

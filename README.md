@@ -22,6 +22,7 @@ A responsive personal portfolio website showcasing my skills, projects, and prof
 
 ## Projects Featured
 
+- Football Jersey Online Shopping Platform (Php + React)
 - Restaurant Booking System (Django)
 - Calculator (JavaScript)
 - Etch-a-Sketch (JavaScript)
