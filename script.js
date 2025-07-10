@@ -101,7 +101,7 @@ function setupSmoothScroll() {
             }
         });
     });
-
+    
     // Update active nav link on scroll
     window.addEventListener('scroll', debounce(() => {
         const sections = document.querySelectorAll('section');
